@@ -35,11 +35,11 @@ function AddBeerPage() {
       name,
       tagline,
       description,
-      imageUrl,
-      firstBrewed,
-      brewersTips,
-      attenuationLevel,
-      contributedBy
+      image_url: imageUrl,
+      first_brewed: firstBrewed,
+      brewers_tips: brewersTips,
+      attenuation_level: Number(attenuationLevel),
+      contributed_by: contributedBy
     }
 
     axios.post('https://ih-beers-api2.herokuapp.com/beers/new', newBeer)
